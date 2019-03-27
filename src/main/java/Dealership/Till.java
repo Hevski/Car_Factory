@@ -11,4 +11,8 @@ public class Till {
     public int getMoney() {
         return money;
     }
+
+    public int increaseMoney(int amount){
+        return this.money += amount;
+    }
 }

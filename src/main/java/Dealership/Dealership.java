@@ -7,11 +7,13 @@ import java.util.ArrayList;
 public class Dealership {
 
     private String name;
+    private Till till;
     private ArrayList<Vehicle> vehicles;
 
-    public Dealership(String name){
+    public Dealership(String name, Till till){
         this.name = name;
         this.vehicles = new ArrayList<Vehicle>();
+        this.till = till;
     }
 
     public String getName() {
@@ -25,4 +27,10 @@ public class Dealership {
     public void setVehicles(ArrayList<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
-}
+
+    public void sellVehicle(Vehicle vehicle){
+        if (this.vehicles.contains(vehicle)){
+            this.vehicles.remove(vehicle);
+        }
+      }
+    }

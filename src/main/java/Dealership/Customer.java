@@ -1,5 +1,7 @@
 package Dealership;
 
+import Vehicles.Vehicle;
+
 public class Customer {
 
     private String name;
@@ -16,5 +18,9 @@ public class Customer {
 
     public int getMoney() {
         return money;
+    }
+
+    public int buysVehicle(Vehicle vehicle){
+        return this.money -= vehicle.getPrice();
     }
 }
