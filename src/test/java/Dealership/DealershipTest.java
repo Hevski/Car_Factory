@@ -50,4 +50,10 @@ public class DealershipTest {
         dealership.sellVehicle(motorBike);
         assertEquals(1, dealership.getVehicles().size());
     }
+
+    @Test
+    public void tillMoneyIncreases(){
+        dealership.sellVehicle(motorBike);
+        assertEquals(122000, till.getMoney());
+    }
 }

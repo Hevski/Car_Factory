@@ -32,5 +32,6 @@ public class Dealership {
         if (this.vehicles.contains(vehicle)){
             this.vehicles.remove(vehicle);
         }
+        this.till.increaseMoney(vehicle.getPrice());
       }
     }

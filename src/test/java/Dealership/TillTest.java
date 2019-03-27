@@ -32,7 +32,7 @@ public class TillTest {
         customer = new Customer("Heather", 50000);
         engine = new Engine("2l", 56, "petrol");
         motorBike = new MotorBike(22000, "blue", engine);
-        dealership = new Dealership("CarFactory");
+        dealership = new Dealership("CarFactory", till);
         vehicles = new ArrayList<Vehicle>();
         dealership.setVehicles(vehicles);
         vehicles.add(motorBike);
