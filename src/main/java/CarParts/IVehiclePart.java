@@ -1,7 +1,9 @@
 package CarParts;
 
+import Vehicles.Vehicle;
+
 public interface IVehiclePart {
 
-  public void canAddPart();
+  public String canAddPart(String vehicle);
 
 }

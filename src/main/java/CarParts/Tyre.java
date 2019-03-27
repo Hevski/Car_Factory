@@ -18,7 +18,7 @@ public class Tyre implements IVehiclePart {
         return brand;
     }
 
-    public void canAddPart() {
-
+    public String canAddPart(String vehicle) {
+        return "I've been added to " + vehicle;
     }
 }

@@ -1,5 +1,7 @@
 package CarParts;
 
+import Vehicles.Vehicle;
+
 public class Engine implements IVehiclePart {
 
     private String size;
@@ -24,7 +26,8 @@ public class Engine implements IVehiclePart {
         return type;
     }
 
-    public void canAddPart() {
+    public String canAddPart(String vehicle) {
+        return "I've been added to " + vehicle;
 
     }
 }

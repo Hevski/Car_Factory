@@ -25,4 +25,9 @@ public class TyresTest {
         Assert.assertEquals("Michelin", tyre.getBrand());
     }
 
+    @Test
+    public void canBeAdded() {
+        assertEquals("I've been added to Motorbike", tyre.canAddPart("Motorbike"));
+    }
+
 }
